@@ -4,7 +4,7 @@
  * @version 1.2
 */ 
 
-public class hw1_1 {
+public class Hw1_1 {
     public static void main (String[] args){
         byte t =64;
         short s=2048;
