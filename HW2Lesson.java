@@ -11,7 +11,7 @@ public class HW2Lesson {
 		invertArray();									//2.1
 		fillArray();									//2.2
 		changeArray();									//2.3
-		fillDiogonal(5);								//2.4
+		fillDiogonal(4);								//2.4
 		findMinMax();									//2.5
 		int []arr = {1,5,3,2,11,4,5,2,4,8,7};
 		compareSum(arr);								//2.6		
