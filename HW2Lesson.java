@@ -11,7 +11,7 @@ public class HW2Lesson {
 		invertArray();									//2.1
 		fillArray();									//2.2
 		changeArray();									//2.3
-		fillDiogonal(4);								//2.4
+		fillDiogonal(5);								//2.4
 		findMinMax();									//2.5
 		int []arr = {1,5,3,2,11,4,5,2,4,8,7};
 		compareSum(arr);								//2.6		
@@ -44,9 +44,10 @@ public class HW2Lesson {
   }  
     public static void fillDiogonal(int len){			//2.4
      	int[][] arr = new int[len][len];	
-		for (int i = 0; i < len; i++){
+		for (int i = 0; i < len; i++){		
 			for (int j = 0; j < len; j++){		
 				arr[i][j] = (i == j)? 1 : 0;
+				if (i == len-1-j) arr[i][j] = 1 ;
 				System.out.print(arr[i][j] + " ");
 				}	
 			System.out.println();
@@ -63,19 +64,18 @@ public class HW2Lesson {
 		System.out.println(Arrays.toString(arr) + " Min= " + Min + ",Max= " + Max);		
   }
     public static void compareSum(int[] arr){			//2.6		
-		int sum1 = 0;
-		int sum2 = 0;
-		int lenHalf = 0;
-		float half = arr.length%2;
-		if (half == 0) {
-			lenHalf = arr.length/2;
-			}
-			else { 
-			lenHalf = arr.length -(arr.length/2);
-			}
-		for (int i = 0; i < lenHalf ; i++) sum1 = sum1 + arr [i];
-		for (int i = lenHalf; i < arr.length ; i++) sum2 = sum2 + arr [i];	
-		boolean sum = sum1==sum2? true:false;
+		boolean sum = false;
+		for (int j = 0 ; j < arr.length ; j++){
+			int sum1 = 0;
+			int sum2 = 0;		
+			for (int i = 0; i < j+1 ; i++) sum1 = sum1 + arr [i];
+			for (int i = j+1; i < arr.length ; i++) sum2 = sum2 + arr [i];	
+			if (sum1==sum2) { 
+				sum = true;
+				break;
+				}
+			else sum = false;
+		}
 		System.out.println(Arrays.toString(arr) + " Half array equal? " + sum);		
   }	
  /*  not finished
