@@ -49,7 +49,7 @@ class HW5Lesson {
                 System.out.println(persArray[j]); 
                 k++;
             }
-            if (f == k) break;
+            if (f == k||s.equals("n")) break;
         }
     }
        
