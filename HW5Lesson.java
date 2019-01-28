@@ -52,10 +52,7 @@ class HW5Lesson {
             if (f == k) break;
         }
     }
-    
-    public void show() {
-        System.out.println("Input !"); 
-    }
+       
 }
 
 class Person {
@@ -78,14 +75,14 @@ class Person {
         scanner = new Scanner(System.in);
     }
     
-    public int setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
-        return age;
     }
 
     public int getAge() {
         return age;
     } 
+    
     public void setName(String name) {
         this.name = name;
     }
