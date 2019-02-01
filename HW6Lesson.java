@@ -16,7 +16,7 @@ class HW6Lesson {
         System.out.println("Limit Dog2: run =" + 600 + ";\t swim =" + 10 + ";\tjump =" + 0.5);
         System.out.println();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {     // test
             Cat cat = new Cat(random.nextInt(700), random.nextInt(20), Math.floor (random.nextDouble()*30)/10);
             cat.setMaxRun(cat.RUN_MAX);
             cat.setMaxJump(cat.JUMP_MAX);
