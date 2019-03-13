@@ -1,0 +1,31 @@
+#btn {
+    -fx-text-fill: #2524ff;
+    -fx-background-image: url("../img/apply.png");
+    -fx-background-size: 20 20;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+
+}
+
+#btn: hover {
+    -fx-text-fill: #ff3d0c;
+}
+
+.text-area {
+    -fx-text-fill: #01c200;
+    -fx-control-inner-background: #000000;
+    -fx-highlight-fill: red;
+    -fx-highlight-text-fill: yellow;
+}
+
+.text-field {
+    -fx-text-fill:#000000;
+    -fx-control-inner-background: #38ae38;
+    -fx-highlight-fill: red;
+    -fx-highlight-text-fill: yellow;
+}
+
+.root{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Consolas";
+}
