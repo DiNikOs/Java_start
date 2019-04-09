@@ -1,10 +1,10 @@
 //package HW4;
 /**
- * Java. Level 3 Lesson 4
- * Thread
+ * Java. Level 3 3Lesson 4
+ * Thread wait(),notify()
  *
  * @author DMITRIY OSTROVSKIY
- * @version 0.1 dated APR 09, 2019
+ * @version 0.2 dated APR 09, 2019
  */
 
 public class HW4 {
@@ -16,19 +16,19 @@ public class HW4 {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                let.printA();
+                let.print('A','B');
             }
         });
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                let.printB();
+                let.print('B','C');
             }
         });
         Thread t3 = new Thread(new Runnable() {
             @Override
             public void run() {
-                let.printC();
+                let.print('C','A');
             }
         });
         t1.start();
@@ -36,55 +36,16 @@ public class HW4 {
         t3.start();
     }
 
-    public void printA() {
+    public void print(char first, char second) {
         synchronized(letObj) {
             try {
                 for (int i = 0; i < 5; i++) {
-                    while (letter != 'A') {
-                        letObj.wait();
+                    while (letter != first) {
+                        letObj.wait(1);
                     }
-                    //Thread.sleep(100);  ? if the same values random bug
-                    Thread.sleep(50);
-                    System.out.println("A");
-                    letter = 'B';
-                    letObj.notify();
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public void printB() {
-        synchronized(letObj) {
-            try {
-                for (int i = 0; i < 5; i++) {
-                    while (letter != 'B') {
-                        letObj.wait();
-                    }
-                    //Thread.sleep(100);  ? if the same values random bug
-                    Thread.sleep(100);
-                    System.out.println("B");
-                    letter = 'C';
-                    letObj.notifyAll();
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public void printC() {
-        synchronized(letObj) {
-            try {
-                for (int i = 0; i < 5; i++) {
-                    while (letter != 'C') {
-                        letObj.wait();
-                    }
-                    //Thread.sleep(100);  ? if the same values random bug
-                    Thread.sleep(50);
-                    System.out.println("C");
-                    letter = 'A';
+                    System.out.println(Thread.currentThread().getName());
+                    System.out.println(first);
+                    letter = second;
                     letObj.notify();
                 }
             } catch (InterruptedException e) {
