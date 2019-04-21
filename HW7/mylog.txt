@@ -1,0 +1,24 @@
+апр 14, 2019 8:49:56 PM java.util.logging.LogManager$RootLogger log
+SEVERE: 1
+апр 14, 2019 8:49:56 PM java.util.logging.LogManager$RootLogger log
+INFO: 2
+апр 14, 2019 8:49:56 PM java.util.logging.LogManager$RootLogger log
+CONFIG: 3
+апр 14, 2019 8:49:56 PM java.util.logging.LogManager$RootLogger log
+FINE: 4
+апр 14, 2019 8:50:32 PM java.util.logging.LogManager$RootLogger log
+SEVERE: 1
+апр 14, 2019 8:50:32 PM java.util.logging.LogManager$RootLogger log
+INFO: 2
+апр 14, 2019 8:50:32 PM java.util.logging.LogManager$RootLogger log
+CONFIG: 3
+апр 14, 2019 8:50:32 PM java.util.logging.LogManager$RootLogger log
+FINE: 4
+апр 14, 2019 8:50:37 PM java.util.logging.LogManager$RootLogger log
+SEVERE: 1
+апр 14, 2019 8:50:37 PM java.util.logging.LogManager$RootLogger log
+INFO: 2
+апр 14, 2019 8:50:37 PM java.util.logging.LogManager$RootLogger log
+CONFIG: 3
+апр 14, 2019 8:50:37 PM java.util.logging.LogManager$RootLogger log
+FINE: 4
