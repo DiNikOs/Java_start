@@ -1,5 +1,14 @@
 package HW7;
 
+/**
+ * Java. Level 3 Lesson 7
+ * Reflection API
+ * copy class's "Ivanov", "Petrov", "Sidorov" in C:/java1/lesson1
+ * @author DMITRIY OSTROVSKIY
+ * @version 0.1 dated APR 16, 2019
+ */
+
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
