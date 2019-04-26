@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="27032019:ear exploded">
+    <output-path>$PROJECT_DIR$/target/Java3</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="27032019/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Java3/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+    </root>
+  </artifact>
+</component>
